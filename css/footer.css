@@ -21,6 +21,46 @@ footer {
     font-family: "Paytone One", sans-serif;
     color: white;
 
+    @media(max-width:1250px) {
+
+        footer{
+            justify-content: space-between;
+            height: 200px;
+        }
+
+        .colabs {
+            font-size: 18px;
+            margin-top: 2rem;
+        }
+
+        .imgfooter {
+            img {
+                height: 37px;
+            }
+
+            .vaca {
+                height: 57px;
+            }
+        }
+
+        .redes{
+            img{
+                height: 30px;
+                padding: 5px;
+            }
+            margin-top: 10rem;
+        }
+
+        .membros {
+            font-size: 18px;
+        }
+
+        .baixo{
+            font-size: 18px;
+            margin-top: 2rem;
+            gap: 2rem;
+        }
+    }
     @media(max-width:1050px) {
 
         footer{
@@ -28,12 +68,8 @@ footer {
             height: 200px;
         }
 
-        .geral{
-            margin-top: 100px;
-        }
-
         .colabs {
-            font-size: 18px;
+            font-size: 16px;
             margin-top: 2rem;
         }
 
@@ -49,28 +85,27 @@ footer {
 
         .redes{
             img{
-                height: 28px;
+                height: 25px;
                 padding: 5px;
             }
             margin-top: 7rem;
         }
 
         .membros {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .baixo{
-            margin-top: 0rem;
+            font-size: 20px;
+            margin-top: 2rem;
             gap: 2rem;
         }
     }
     @media(max-width:860px) {
 
         footer{
-            justify-content: center;
-            width: 860px;
-            object-fit: cover;
-            margin-top: -5rem;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .infos{
@@ -80,13 +115,12 @@ footer {
 
         .geral{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+
+            justify-content: space-between;
         }
 
         .colabs {
             font-size: 15px;
-            margin-top: 0;
         }
 
         .imgfooter {
@@ -109,7 +143,7 @@ footer {
 
         .membros {
             font-size: 12px;
-            display: flex;
+            text-align: center;
         }
 
         .baixo{
@@ -134,7 +168,7 @@ footer {
 }
 
 .colabs {
-    font-size: 20px;
+    font-size: 19px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,12 +184,12 @@ footer {
     display: flex;
 
     img {
-        height: 43px;
+        height: 40px;
         padding: 5px;
     }
 
     .vaca {
-        height: 70px;
+        height: 65px;
     }
 }
 
@@ -163,7 +197,7 @@ footer {
     margin-top: 12rem;
 
     img {
-        height: 30px;
+        height: 28px;
         padding: 8px;
         transition: 0.3s ease;
     }
