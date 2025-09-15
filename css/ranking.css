@@ -15,16 +15,77 @@ body {
     background-repeat: no-repeat;
 
     align-items: center;
+    justify-content: center;
+}
+
+.geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .topo {
     font-family: "Cherry Bomb One", system-ui;
     font-size: 50px;
-    display: flex;
     width: 100%;
-    align-items: center;
     text-align: center;
+
     img {
         height: 80px;
     }
+}
+
+.bigColuna {
+    align-items: center;
+    width: 850px;
+    height: auto;
+    background-color: rgb(251, 229, 181);
+    align-items: center;
+    justify-content: center;
+}
+
+.classificacoes {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.classificacao {
+    display: flex;
+    background-color: white;
+    width: 500px;
+    height: 100px;
+    align-items: center;
+}
+
+.ano {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Paytone one";
+}
+.classe{
+    font-size: 18px;
+}
+
+.etapa{
+    color: white;
+    background-color: black;
+}
+
+.posi {
+    background-color: black;
+    color: white;
+    font-family: "Cherry Bomb One", system-ui;
+    height: 60px;
+    width: 80px;
+    font-size: 2.3rem;
+}
+
+.li{
+    font-size:3rem ;
+    font-family: "Cherry Bomb One", system-ui;
 }
