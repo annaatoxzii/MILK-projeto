@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,31 +20,32 @@
 
     <!------------------------------ COMEÇO HEADER ------------------------------>
 
+    <section id="topo">
+        <header class="base-header">
+            <div class="conteudo-header">
+                <div class="conteudo-logo">
+                    <img src="/src/assets/logo.png" alt="Logo">
+                </div>
 
-    <header class="base-header">
-        <div class="conteudo-header">
-            <div class="conteudo-logo">
-                <img src="/src/assets/logo.png" alt="Logo">
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/pages/index.html" class="naoactive">Início</a></li>
+                        <li><a href="/pages/salas.html" class="naoactive">Salas</a></li>
+                        <li><a href="/pages/ranking.html" class="active">Ranking</a></li>
+                        <li><a href="/pages/equipe.html" class="naoactive">Equipe</a></li>
+                        <li><a href="/pages/sobre.html" class="naoactive">Sobre</a></li>
+                    </ul>
+                </nav>
             </div>
-
-
-            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/index.html" class="naoactive">Início</a></li>
-                    <li><a href="/pages/salas.html" class="naoactive">Salas</a></li>
-                    <li><a href="/pages/ranking.html" class="active">Ranking</a></li>
-                    <li><a href="/pages/equipe.html" class="naoactive">Equipe</a></li>
-                    <li><a href="/pages/sobre.html" class="naoactive">Sobre</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </header>
+    </section>
 
 
     <!------------------------------ FIM HEADER ------------------------------>
@@ -64,40 +66,44 @@
 
     <!------------------------------ INICIO ranking ------------------------------>
     <div class="geralBody">
-        <div class="topo">
-            <h1>RANK<img src="/imagens/vaca 1.png" alt="">NG</h1>
-        </div>
+        <section class="topo">
+            <h1 id="rankingTitulo">RANK<img src="/imagens/vaca 1.png" alt="">NG</h1>
+        </section>
 
         <div class="ranking">
-            <div class="buraco">
 
-                <div class="coluna">
+            <div class="colunas">
+
+                <div class="coluna2">
                     <div class="posicao">2</div>
-                    <div class="coluna segundo">
+                    <div class="coluna">
                         <div class="turma">3º A</div>
                         <div class="ensino">Ensino médio</div>
                         <div class="litros">70L</div>
                     </div>
                 </div>
 
-                <div class="coluna">
+                <div class="coluna1">
                     <div class="posicao">1</div>
-                    <div class="coluna primeiro">
+                    <div class="coluna">
                         <div class="turma">3º B</div>
                         <div class="ensino">Ensino médio</div>
                         <div class="litros">76L</div>
                     </div>
                 </div>
 
-                <div class="coluna">
+                <div class="coluna3">
                     <div class="posicao">3</div>
-                    <div class="coluna terceiro">
+                    <div class="coluna">
                         <div class="turma">2º B</div>
                         <div class="ensino">Ensino médio</div>
                         <div class="litros">64L</div>
                     </div>
                 </div>
+
             </div>
+
+            <div class="buraco"></div>
 
             <div class="bigColuna">
                 <div class="classificacoes">
@@ -275,74 +281,78 @@
                     <div class="ttl">
                         <h1>TOTAL</h1>
                     </div>
-                    <h1>630L</h1>
+                    <h1>315L</h1>
                     <p>315 caixas de leite</p>
                 </div>
 
+                <a href="#topo"><button type="button"> <img class="botaoo" src="/imagens/Group 20.png"></button></a>
             </div>
 
-<button class="voltar" type="button"><img src="/imagens/Group 33.png" alt=""></button>
-
         </div>
+
+        <script src="/javascript/ranking.js"></script>
+
+
+        <!------------------------------ FIM ranking ------------------------------>
+
+        <!------------------------------ INICIO FOOTER ------------------------------>
+
+        <footer>
+
+
+
+            <div class=" geral">
+                <div class="infos">
+
+                    <div class="colabs">
+                        <h3>Uma colaboração:</h3>
+                        <div class="imgfooter">
+                            <img class="vaca" src="/imagens/mono 1.png" alt="">
+                            <img src="/imagens/sesibranco.png" alt="">
+                            <img src="/imagens/senaibranco.png" alt="">
+                        </div>
+                    </div>
+                    <div class="redes">
+                        <a
+                            href="https://www.instagram.com/sesisp?utm_source=ig_web_button_share_sheet&igsh=MWIyNndodWRqZTFqcA=="><img
+                                src="/imagens/instagram (1) 1.png" alt=""></a>
+                        <a href="https://www.facebook.com/share/18jBaEoRLJ/"><img src="/imagens/facebook (2) 1.png"
+                                alt=""></a>
+                        <a href="https://x.com/SesiSaoPaulo?t=oloz2CT8xgSEkSCf2C-Elg&s=09"><img
+                                src="/imagens/twitter 1.png" alt=""></a>
+                        <a href="www.youtube.com/c/SesiSãoPauloOficial"><img src="/imagens/youtube 1.png" alt=""></a>
+                    </div>
+                    <div class="membros">
+                        <h3>Desenvolvido por:</h3>
+                        <h3>Ana Tozzi</h3>
+                        <h3>Guilherme Albuquerque</h3>
+                        <h3>João Augusto</h3>
+                        <h3>Pedro Olian</h3>
+                    </div>
+
+                </div>
+
+
+                <nav class="baixo">
+                    <a href="/pages/index.html">
+                        <div class="bx">Início</div>
+                    </a>
+                    <a href="/pages/salas.html">
+                        <div class="bx">Salas</div>
+                    </a>
+                    <a href="/pages/ranking.html">
+                        <div class="bx">Ranking</div>
+                    </a>
+                    <a href="/pages/equipe.html">
+                        <div class="bx">Equipe</div>
+                    </a>
+                    <a href="/pages/sobre.html">
+                        <div class="bx">Sobre</div>
+                    </a>
+                </nav>
+            </div>
 
     </div>
-
-    <!------------------------------ FIM ranking ------------------------------>
-
-    <!------------------------------ INICIO FOOTER ------------------------------>
-
-    <footer>
-
-        <div class="geral">
-            <div class="infos">
-
-                <div class="colabs">
-                    <h3>Uma colaboração:</h3>
-                    <div class="imgfooter">
-                        <img class="vaca" src="/imagens/mono 1.png" alt="">
-                        <img src="/imagens/sesibranco.png" alt="">
-                        <img src="/imagens/senaibranco.png" alt="">
-                    </div>
-                </div>
-                <div class="redes">
-                    <a
-                        href="https://www.instagram.com/sesisp?utm_source=ig_web_button_share_sheet&igsh=MWIyNndodWRqZTFqcA=="><img
-                            src="/imagens/instagram (1) 1.png" alt=""></a>
-                    <a href="https://www.facebook.com/share/18jBaEoRLJ/"><img src="/imagens/facebook (2) 1.png"
-                            alt=""></a>
-                    <a href="https://x.com/SesiSaoPaulo?t=oloz2CT8xgSEkSCf2C-Elg&s=09"><img src="/imagens/twitter 1.png"
-                            alt=""></a>
-                    <a href="www.youtube.com/c/SesiSãoPauloOficial"><img src="/imagens/youtube 1.png" alt=""></a>
-                </div>
-                <div class="membros">
-                    <h3>Desenvolvido por:</h3>
-                    <h3>Ana Tozzi</h3>
-                    <h3>Guilherme Albuquerque</h3>
-                    <h3>João Augusto</h3>
-                    <h3>Pedro Olian</h3>
-                </div>
-
-            </div>
-
-
-            <nav class="baixo">
-                <a href="index.html">
-                    <div class="bx">Início</div>
-                </a>
-                <a href="salas.html">
-                    <div class="bx">Salas</div>
-                </a>
-                <a href="ranking.html">
-                    <div class="bx">Ranking</div>
-                </a>
-                <a href="equipe.html">
-                    <div class="bx">Equipe</div>
-                </a>
-                <a href="sobre.html">
-                    <div class="bx">Sobre</div>
-                </a>
-            </nav>
-        </div>
 
     </footer>
     <!------------------------------ FIM FOOTER ------------------------------>
