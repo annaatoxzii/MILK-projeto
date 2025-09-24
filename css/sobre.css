@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(/imagens/BANNER.png);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.geralbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo {
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 60px;
+    text-align: center;
+    padding: 4rem;
+    cursor: pointer;
+}
+
+img {
+    height: 90px;
+}
+
+.bigColuna {
+    background: url(/imagens/BACK_irre.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 2480px;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.TEXTO {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 50px;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoo {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+
+    h2 {
+        color: rgba(33, 33, 33, 1);
+        font-size: 25px;
+        font-family: "Paytone one";
+        padding: 0.9rem;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    border-radius: 30px;
+    height: auto;
+    padding: 2rem;
+    background-color: rgba(33, 33, 33, 1);
+    font-family: "Paytone one";
+    color: white;
+    font-size: 35px;
+    gap: 2rem;
+
+    .botaoo {
+        color: rgba(33, 33, 33, 1);
+        background-color: rgba(255, 200, 113, 1);
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 35px;
+        width: 18.5rem;
+        height: 55px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: rgba(255, 200, 113, 1);
+            background-color: transparent;
+        }
+    }
+}
+
+.bt {
+    padding: 2rem;
+
+    img {
+        height: auto;
+        width: 4rem;
+    }
+}
+
+.cartaz {
+    width: 60%;
+    height: auto;
+    background-color: rgba(255, 200, 113, 1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+        margin-bottom: -12rem;
+
+    h4 {
+        font-family: "Paytone one";
+        font-size: 25px;
+    }
+
+    .lar {
+        justify-content: center;
+        display: flex;
+        height: auto;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 5px;
+    }
+
+    .contact, .contact1, .contact2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 100px;
+
+        h3 {
+            font-family: "Paytone one";
+            font-size: 19px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+
+    .contact{
+        width: 220px;
+    }
+    .contact1{
+        width: 270px;
+    }
+    .contact2{
+        width: 350px;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        background-color: rgba(251, 229, 181, 1);
+        border-radius: 30px;
+
+        img {
+            height: 28px;
+            width: 30px;
+        }
+    }
+}

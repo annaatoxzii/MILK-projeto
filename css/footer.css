@@ -221,6 +221,7 @@ footer {
     justify-content: center;
     display: flex;
     border-radius: 35px;
+    transition: all 0.3s ease;
 
     &:hover {
         background-color: #FDCB6E;
