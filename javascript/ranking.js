@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         [colDireita, colEsquerda, colCentro].forEach(c => c.classList.remove("show"));
 
         setTimeout(() => colDireita.classList.add("show"), 0);
-        setTimeout(() => colEsquerda.classList.add("show"), 700);
-        setTimeout(() => colCentro.classList.add("show"), 1400);
+        setTimeout(() => colEsquerda.classList.add("show"), 400);
+        setTimeout(() => colCentro.classList.add("show"), 800);
 
         obs.disconnect();
       }
