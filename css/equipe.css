@@ -17,6 +17,7 @@ body {
     z-index: 1;
     align-items: center;
     justify-content: center;
+    
 
 }
 
@@ -25,12 +26,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .geralMembros {
     display: flex;
     flex-direction: column;
-
+ h1 {
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 3rem;
+    }
+ h6 {
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
 }
 
 .topo {
@@ -41,10 +51,10 @@ body {
     margin-bottom: 2rem;
     cursor: pointer;
     margin-bottom: 2rem;
-}
 
-img {
-    height: 90px;
+    img {
+        height: 90px;
+    }
 }
 
 .buraco {
@@ -74,10 +84,6 @@ img {
     text-align: center;
     gap: 1rem;
 
-    h1 {
-        font-family: "Cherry Bomb One", system-ui;
-        font-size: 3rem;
-    }
 
     p {
         font-family: "Paytone one";
@@ -95,13 +101,20 @@ img {
     flex-direction: column;
     align-items: center;
     width: 1520px;
-    height: 1300px;
-    align-items: center; /* Isso é redundante, removi o segundo */
+    height: 1600px;
+    align-items: center;
     justify-content: center;
     z-index: 3;
     position: relative;
-    /* Adicionei overflow: visible para garantir que o conteúdo absolute não seja cortado */
     overflow: visible;
+}
+
+.sm {
+    display: flex;
+    font-family: "Paytone one";
+    font-size: 1.8rem;
+    color: rgba(251, 229, 181, 1);
+    margin-bottom: 1rem;
 }
 
 .membros2,
@@ -113,12 +126,13 @@ img {
     align-items: center;
     gap: 4rem;
 
-    .membros2 { /* Isso é nesting inválido no CSS padrão; mova para fora se usar SASS, senão ignore */
+    .membros2 {
+
         position: relative;
         z-index: 99;
     }
 
-    .membros3 { /* Idem acima */
+    .membros3 {
         position: relative;
         z-index: 98;
     }
@@ -128,128 +142,134 @@ img {
 .membro3,
 .membro4,
 .membro5 {
-    width: 300px;
-    /* height: 290px; Mantenha fixa! Não mude no hover para evitar reflow */
-    height: 280px; /* FIXA - isso previne o empurrão */
+    position: relative;
+    height: 320px;
+    background-color: rgba(33, 33, 33, 1);
+    border-radius: 30px;
+    border: 1rem solid rgba(255, 200, 113, 1);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    transition: height 0.4s ease, z-index 0s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: rgba(33, 33, 33, 1);
     gap: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-radius: 30px;
-    border: 1rem solid rgba(255, 200, 113, 1);
-    margin-bottom: 3rem; /* Isso pode ser removido se não precisar de espaço extra */
-    position: relative; /* Essencial para position: absolute do filho funcionar */
+    margin-bottom: 9rem;
     z-index: 1;
-    transition: transform 0.4s ease, z-index 0s; /* Mantenha para zoom se quiser */
-
-    &:hover {
-        /* Remova height: 480px; - não precisa mais! */
-        /* transform: scale(1.2); Descomente se quiser zoom ADICIONAL ao expand */
-        z-index: 99; /* Sobe o card inteiro por cima dos outros */
-
-        img {
-            filter: grayscale(0);
-        }
-
-        .sm {
-            display: none;
-        }
-
-        .membro2 {
-            display: flex !important; /* Força exibição */
-            position: absolute; /* NOVA: Sai do fluxo normal, sem empurrar */
-            top: 100%; /* Posiciona logo abaixo do card (ajuste se precisar de overlap) */
-            left: 0;
-            width: 300px; /* Largura total do card pai */
-            /* height: auto; Deixe flex calcular */
-            background-color: rgba(33, 33, 33, 1); /* Mesmo fundo para parecer contínuo */
-            border-radius: 0 0 30px 30px; /* Arredonda só embaixo, para conectar ao card */
-            border: 1rem solid rgba(255, 200, 113, 1); /* Mesma borda, mas ajuste se quiser só em cima */
-            border-top: none; /* Remove borda de cima para seamless */
-            margin: 0; /* Remove gaps/margins */
-            padding: 1rem; /* Adicione padding interno se precisar */
-            z-index: 100; /* Alto para sobrepor tudo */
-            opacity: 0; /* Para transição */
-            transform: translateY(-10px); /* Pequeno offset para animação */
-            transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave de aparição */
-            opacity: 1; /* No hover, fica visível */
-            transform: translateY(0); /* Anima para posição final */
-
-            /* Se quiser que estenda MUITO para baixo sem sobrepor, adicione margin-top negativo no container pai, mas teste */
-        }
-    }
 
     img {
         width: 90%;
         height: auto;
         border-radius: 30px;
         filter: grayscale(100%);
+        transition: filter 0.4s ease;
     }
 
-    .sm {
-        color: rgba(251, 229, 181, 1);
-        font-family: "Paytone one";
-        font-size: 1.8rem;
-        position: relative;
-        z-index: 10;
-        display: flex;
+    .nome {
+        background-color: rgb(255, 208, 108);
+        border-radius: 70px;
+        font-family: "Cherry Bomb One";
+        width: 100%;
+        font-size: 1.7rem;
+        padding: 5px;
+        margin-bottom: 1rem;
+        color: white;
     }
 
-    .membro2 {
-        display: none; /* Inicial: escondido */
-        flex-direction: column;
-        justify-content: center;
+    .hover-content {
         text-align: center;
+        width: 80%;
+        opacity: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        width: 80%; /* Ajuste para caber no absolute */
-
-        .nome {
-            background-color: rgba(251, 229, 181, 1);
-            width: 100%;
-            height: 2.8rem;
-            border-radius: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: "Cherry Bomb One", system-ui;
-            font-size: 2rem;
-        }
+        justify-content: center;
+        margin-top: 1rem;
+        transition: opacity 0.4s ease, height 0.4s ease, margin-top 0.4s ease;
 
         p {
             color: white;
             font-family: "Paytone one";
             font-size: 18px;
-            margin: 0; /* Limpa margins para caber melhor */
+        }
+    }
+
+    &:hover {
+        z-index: 99;
+
+        .sm {
+            display: none;
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: rgba(251, 229, 181, 1);
+            margin-bottom: 1rem;
+        }
+
+        img {
+            filter: grayscale(0%);
+        }
+
+        .hover-content {
+            opacity: 1;
+            height: calc(480px - 280px - 2rem);
+            margin-top: 1rem;
+
+            p {
+                position: relative;
+                z-index: 100;
+                margin: 0;
+                font-size: 18px;
+            }
         }
     }
 }
 
-/* Mantenha os z-index individuais se precisar, mas o hover já cuida */
-.membro1 {
-    display: flex;
-    position: relative;
-    z-index: 5;
-}
 
-.membro3 {
-    display: flex;
-    position: relative;
-    z-index: 6;
-}
-
-.membro4 {
-    display: flex;
-    position: relative;
-    z-index: 7;
-}
-
+.membro1,
+.membro3,
+.membro4,
 .membro5 {
-    display: flex;
     position: relative;
-    z-index: 8;
+    height: 320px;
+    /* nunca muda */
+    overflow: visible;
+    /* deixa o hover-content sair pra fora */
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* conteúdo escondido */
+.membro1 .hover-content,
+.membro3 .hover-content,
+.membro4 .hover-content,
+.membro5 .hover-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 91%;
+    background: rgba(33, 33, 33, 0.95);
+    border: 1rem solid rgba(255, 200, 113, 1);
+    /* <- borda extra */
+    border-top: none;
+    /* não duplicar na união */
+    border-radius: 0 0 30px 30px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* mostra quando hover */
+.membro1:hover .hover-content,
+.membro3:hover .hover-content,
+.membro4:hover .hover-content,
+.membro5:hover .hover-content {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+    /* fica alinhado no centro */
 }
