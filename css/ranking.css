@@ -44,9 +44,9 @@ img {
     background: url(/imagens/Ellipse\ 1\ \(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    height: 200px;
     width: 100%;
-    margin-bottom: -8.89rem;
+    margin-bottom: -7rem;
     z-index: 1;
     display: flex;
     justify-content: space-around;
@@ -172,7 +172,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
+    width: 1000px;
     height: 3100px;
     align-items: center;
     justify-content: center;
