@@ -17,7 +17,7 @@ body {
     z-index: 1;
     align-items: center;
     justify-content: center;
-    
+
 
 }
 
@@ -26,17 +26,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .geralMembros {
     display: flex;
     flex-direction: column;
- h1 {
+
+    h1 {
         font-family: "Cherry Bomb One", system-ui;
         font-size: 3rem;
     }
- h6 {
+
+    h6 {
         font-family: "Cherry Bomb One", system-ui;
         font-size: 3rem;
     }
@@ -67,6 +69,17 @@ body {
     display: flex;
     justify-content: space-around;
     position: relative;
+}
+
+.cartaz {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.cartaz.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .cartaz {
@@ -108,7 +121,8 @@ body {
     gap: 4rem;
 }
 
-.devs, .mm{
+.devs,
+.mm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,6 +132,7 @@ body {
     width: 70%;
     height: auto;
     border-radius: 30px;
+       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .sm {
@@ -125,9 +140,10 @@ body {
     font-family: "Paytone one";
     font-size: 1.8rem;
     color: rgba(251, 229, 181, 1);
-    text-align:center ;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    margin-top: 12px;
 }
 
 .membros2,
@@ -139,8 +155,9 @@ body {
     align-items: center;
     padding: 2rem;
     gap: 1rem;
-    .membros2 {
 
+
+    .membros2 {
         position: relative;
         z-index: 99;
     }
@@ -155,25 +172,20 @@ body {
 .membro3,
 .membro4,
 .membro5 {
-    position: relative;
-    height: auto;
     background-color: rgba(33, 33, 33, 1);
-    border-radius: 30px;
+    border-radius: 55px;
     border: 1rem solid rgba(255, 200, 113, 1);
-    overflow: hidden;
     cursor: pointer;
     text-align: center;
-    transition: height 0.4s ease, z-index 0s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     margin-bottom: 9rem;
-    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     img {
-        width: 90%;
+        width: 100%;
         height: auto;
         border-radius: 30px;
         filter: grayscale(100%);
@@ -187,8 +199,7 @@ body {
         width: 100%;
         font-size: 1.7rem;
         padding: 5px;
-        margin-bottom: 1rem;
-        color: white;
+        margin-bottom: 0.9rem;
     }
 
     .hover-content {
@@ -202,6 +213,7 @@ body {
         justify-content: center;
         margin-top: 1rem;
         transition: opacity 0.4s ease, height 0.4s ease, margin-top 0.4s ease;
+        box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 
         p {
             color: white;
@@ -247,14 +259,11 @@ body {
 .membro5 {
     position: relative;
     height: 320px;
-    /* nunca muda */
     overflow: visible;
-    /* deixa o hover-content sair pra fora */
     z-index: 1;
     transition: transform 0.3s ease;
 }
 
-/* conteúdo escondido */
 .membro1 .hover-content,
 .membro3 .hover-content,
 .membro4 .hover-content,
@@ -266,16 +275,13 @@ body {
     width: 91%;
     background: rgba(33, 33, 33, 0.95);
     border: 1rem solid rgba(255, 200, 113, 1);
-    /* <- borda extra */
     border-top: none;
-    /* não duplicar na união */
     border-radius: 0 0 30px 30px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* mostra quando hover */
 .membro1:hover .hover-content,
 .membro3:hover .hover-content,
 .membro4:hover .hover-content,
@@ -283,5 +289,4 @@ body {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, 0);
-    /* fica alinhado no centro */
 }

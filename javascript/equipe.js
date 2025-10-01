@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting) {
         [colCentro].forEach(c => c.classList.remove("show"));
 
-        setTimeout(() => colCentro.classList.add("show"), 0);
+        setTimeout(() => colCentro.classList.add("show"), 20);
 
         obs.disconnect();
       }
     });
-  }, { threshold: 0.15 }); 
+  }, { threshold: 0.20 }); 
 
   observer.observe(ranking);
 });
