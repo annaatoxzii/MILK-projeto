@@ -25,6 +25,596 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1100px) {
+
+        .bigColuna {
+            width: 100%;
+            height: auto;
+        }
+
+        .buraco {
+            width: 100%;
+            height: 270px;
+            margin-bottom: -9rem;
+        }
+
+        .colunas {
+            width: 75%;
+            gap: 3rem;
+            margin-bottom: -21rem;
+        }
+
+        .topo {
+            font-size: 48px;
+            padding: 3rem 0;
+        }
+
+        #rankingTitulo img {
+            width: 75px;
+            height: 75px;
+        }
+
+        .posicao {
+            font-size: 3.8rem;
+            height: 8rem;
+            border-radius: 28px;
+        }
+
+        .turma {
+            font-size: 3.2rem;
+        }
+
+        .ensino {
+            font-size: 21px;
+        }
+
+        .litros {
+            font-size: 3.2rem;
+            width: 85%;
+            border-radius: 22px;
+        }
+
+        .coluna1,
+        .coluna2,
+        .coluna3 {
+            width: 65%;
+        }
+
+        .classificacoes {
+            margin-top: 10rem;
+            padding: 2.5rem;
+            gap: 12px;
+        }
+
+        .classificacao {
+            width: 520px;
+            height: 85px;
+            padding: 12px 15px;
+            border-radius: 18px;
+        }
+
+        .posi {
+            font-size: 3.5rem;
+            width: 32%;
+            height: 90%;
+            border-radius: 18px;
+        }
+
+        .li {
+            font-size: 4rem;
+        }
+
+        .ano {
+            font-size: 19px;
+        }
+
+        .classe {
+            font-size: 2.5rem;
+        }
+
+        .etapa {
+            font-size: 18px;
+            padding: 5px 14px;
+            border-radius: 4rem;
+        }
+
+        .total {
+            width: 520px;
+            height: 280px;
+            border-radius: 3.5rem;
+            margin-top: 3rem;
+        }
+
+        .ttl{
+            width: 100%;
+        }
+
+        .total h1 {
+            font-size: 5rem;
+        }
+
+        .total p {
+            font-size: 25px;
+        }
+
+        button {
+            width: 50px;
+            padding: 3.5rem;
+            margin-bottom: 7rem;
+        }
+
+        button img {
+            height: 4.5rem;
+        }
+
+    }
+
+    @media (max-width: 770px) {
+
+        .bigColuna{
+            height:2800px ;
+        }
+
+        .colunas {
+            width: 85%;
+            gap: 2.5rem;
+        }
+
+        .topo {
+            font-size: 40px;
+            padding: 2.5rem 0;
+        }
+
+        #rankingTitulo img {
+            width: 65px;
+            height: 65px;
+        }
+
+        .posicao {
+            font-size: 3.6rem;
+            height: 8rem;
+            border-radius: 25px;
+        }
+
+        .turma {
+            font-size: 2.8rem;
+        }
+
+        .ensino {
+            font-size: 19px;
+            padding: 3px 8px;
+            width: 70%;
+        }
+
+        .litros {
+            font-size: 2.8rem;
+            width: 80%;
+            border-radius: 20px;
+        }
+        .coluna1,
+        .coluna2,
+        .coluna3 {
+            width: 70%;
+        }
+
+        .classificacoes {
+            margin-top: 8rem;
+            padding: 2rem;
+            gap: 10px;
+        }
+
+        .classificacao {
+            width: 480px;
+            height: 75px;
+            padding: 10px 12px;
+            border-radius: 16px;
+        }
+
+        .posi {
+            font-size: 3.4rem;
+            width: 30%;
+            height: 85%;
+            border-radius: 16px;
+        }
+
+        .li {
+            font-size: 3.5rem;
+        }
+
+        .ano {
+            font-size: 17px;
+        }
+
+        .classe {
+            font-size: 2.2rem;
+        }
+
+        .etapa {
+            font-size: 16px;
+            padding: 4px 12px;
+            border-radius: 3.5rem;
+        }
+
+        .total {
+            width: 480px;
+            height: 260px;
+            border-radius: 3rem;
+            margin-top: 2.5rem;
+        }
+
+        .total h1 {
+            font-size: 4.4rem;
+        }
+
+        .total p {
+            font-size: 20px;
+        }
+
+        button {
+            width: 50px;
+            padding: 3rem;
+            margin-bottom: 6rem;
+        }
+
+        button img {
+            height: 4rem;
+        }
+
+    }
+
+    @media (max-width: 680px) {
+
+        .colunas {
+            width: 95%;
+            gap: 2rem;
+            margin-bottom: -22rem;
+        }
+
+        .topo {
+            font-size: 40px;
+            padding: 2rem 0;
+        }
+
+        #rankingTitulo img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .posicao {
+            font-size: 3rem;
+            height: 6rem;
+            border-radius: 22px;
+        }
+
+        .turma {
+            font-size: 2.6rem;
+        }
+
+        .ensino {
+            font-size: 18px;
+            padding: 3px 7px;
+            width: 65%;
+        }
+
+        .litros {
+            font-size: 2.5rem;
+            width: 75%;
+            border-radius: 18px;
+        }
+        
+        .coluna1,
+        .coluna2,
+        .coluna3 {
+            width: 75%;
+
+        }
+
+        .classificacoes {
+            margin-top: 8rem;
+            padding: 1.8rem;
+            gap: 8px;
+        }
+
+        .classificacao {
+            width: 440px;
+            height: 70px;
+            padding: 8px 10px;
+            border-radius: 14px;
+        }
+
+        .posi {
+            font-size: 3.3rem;
+            width: 28%;
+            height: 80%;
+            border-radius: 14px;
+        }
+
+        .li {
+            font-size: 3.3rem;
+        }
+
+        .ano {
+            font-size: 16px;
+        }
+
+        .classe {
+            font-size: 2rem;
+        }
+
+        .etapa {
+            font-size: 15px;
+            padding: 3.5px 10px;
+            border-radius: 3rem;
+        }
+
+        .total {
+            width: 420px;
+            height: 220px;
+            border-radius: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .total h1 {
+            font-size: 4rem;
+        }
+
+        .total p {
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            width: 45px;
+            padding: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        button img {
+            height: 3.8rem;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .bigColuna {
+            width: 100%;
+            height: 2300px;
+        }
+
+        .buraco {
+            width: 100%;
+            height: 160px;
+            margin-bottom: -5rem;
+        }
+
+        .colunas {
+            width: 90%;
+            gap: 1.5rem;
+            margin-bottom: -23rem;
+        }
+
+        .topo {
+            font-size: 32px;
+            padding: 1.5rem 0;
+        }
+
+        #rankingTitulo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .posicao {
+            font-size: 2.5rem;
+            height: 4rem;
+            border-radius: 18px;
+        }
+
+        .turma {
+            font-size: 2rem;
+        }
+
+        .ensino {
+            font-size: 16px;
+            padding: 2px 6px;
+            width: 80%;
+        }
+
+        .litros {
+            font-size: 2rem;
+            width: 90%;
+            border-radius: 15px;
+        }
+        .coluna1,
+        .coluna2,
+        .coluna3 {
+            width: 75%;   
+        }
+
+        .classificacoes {
+            width: 90%;
+            margin-top: 6rem;
+            padding: 1rem;
+            gap: 6px;
+        }
+
+        .classificacao {
+            width: 80%;
+            height: 60px;
+            padding: 6px 8px;
+            border-radius: 12px;
+        }
+
+        .posi {
+            font-size: 2.2rem;
+            width: 25%;
+            height: 75%;
+            border-radius: 12px;
+        }
+
+        .li {
+            font-size: 2.5rem;
+        }
+
+        .ano {
+            font-size: 16px;
+        }
+
+        .classe {
+            font-size: 1.8rem;
+        }
+
+        .etapa {
+            font-size: 14px;
+            padding: 3px 8px;
+            border-radius: 2.5rem;
+        }
+
+        .total {
+            width: 80%;
+            height: auto;
+            border-radius: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .total h1 {
+            font-size: 3rem;
+        }
+
+        .total p {
+            font-size: 14px;
+        }
+
+        button {
+            width: 40px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        button img {
+            height: 3rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .bigColuna {
+            width: 100%;
+            height: 2000px;
+        }
+
+        .buraco {
+            width: 100%;
+            height: 130px;
+            margin-bottom: -4rem;
+        }
+
+        .colunas {
+            width: 90%;
+            gap: 1rem;
+            margin-bottom: -27rem;
+        }
+
+        .topo {
+            font-size: 30px;
+            padding: 1rem 0;
+        }
+
+        #rankingTitulo img {
+            width: 45px;
+            height: 45px;
+        }
+
+        .posicao {
+            font-size: 2rem;
+            height: 3rem;
+            border-radius: 15px;
+        }
+
+        .turma {
+            font-size: 1.7rem;
+        }
+
+        .ensino {
+            font-size: 14px;
+            padding: 2px 5px;
+            width: 80%;
+        }
+
+        .litros {
+            font-size: 1.8rem;
+            width: 85%;
+            border-radius: 12px;
+        }
+
+
+        .coluna1,
+        .coluna2,
+        .coluna3 {
+            width: 90%;
+        }
+
+        .classificacoes {
+            margin-top: 1rem;
+            gap: 6px;
+        }
+
+        .classificacao {
+            width: 85%;
+            height: 56px;
+            padding: 4px 6px;
+            border-radius: 10px;
+        }
+
+        .posi {
+            font-size: 2rem;
+            width: 30%;
+            height: 80%;
+            border-radius: 12px;
+        }
+
+        .li {
+            font-size: 2.3rem;
+        }
+
+        .ano {
+            font-size: 14px;
+        }
+
+        .classe {
+            font-size: 1.5rem;
+        }
+
+        .etapa {
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 2rem;
+        }
+
+        .total {
+            width: 80%;
+            height: auto;
+            border-radius: 1.8rem;
+            margin-top: 1rem;
+        }
+
+        .total h1 {
+            font-size: 2.5rem;
+        }
+
+        .total p {
+            font-size: 12px;
+        }
+
+        button {
+            width: 35px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        button img {
+            height: 2.5rem;
+        }
+    }
+
 }
 
 .topo {
@@ -36,19 +626,15 @@ body {
     cursor: pointer;
 }
 
-img {
-    height: 90px;
-}
-
 .buraco {
     background: url(/imagens/Ellipse\ 1\ \(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-    height: 240px;
+    height: 300px;
     width: 100%;
-    margin-bottom: -11.6rem;
+    margin-bottom: -11rem;
     transform: rotate(0.5deg);
     z-index: 1;
     display: flex;
@@ -57,12 +643,13 @@ img {
 }
 
 .colunas {
+    width: 50%;
     display: flex;
     gap: 4rem;
     z-index: 2;
     position: relative;
     align-items: end;
-    margin-bottom: -17rem;
+    margin-bottom: -24rem;
     justify-content: center;
 }
 
@@ -111,39 +698,39 @@ img {
         opacity: 1;
     }
 
-    .turma {
-        font-family: "Paytone one";
-        font-size: 4rem;
-    }
-
-    .ensino {
-        background-color: white;
-        color: rgba(255, 200, 113, 1);
-        font-family: "Cherry Bomb One", system-ui;
-        padding: 3px;
-        font-size: 20px;
-        border-radius: 30px;
-        width: 80%;
-    }
-
-    .litros {
-        background-color: white;
-        width: 90%;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        font-family: "Cherry Bomb One", system-ui;
-        font-size: 3.5rem;
-        border-radius: 20px;
-    }
 }
 
+.turma {
+    font-family: "Paytone one";
+    font-size: 4rem;
+}
+
+.ensino {
+    background-color: white;
+    color: rgba(255, 200, 113, 1);
+    font-family: "Cherry Bomb One", system-ui;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 30px;
+    width: 80%;
+}
+
+.litros {
+    background-color: white;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 3.5rem;
+    border-radius: 20px;
+}
 
 .coluna2 {
     display: flex;
     flex-direction: column;
-    width: 17%;
-    height: 33rem;
+    width: 60%;
+    height: 38rem;
     align-items: center;
     text-align: center;
     gap: 0.5rem;
@@ -152,8 +739,8 @@ img {
 .coluna1 {
     display: flex;
     flex-direction: column;
-    width: 17%;
-    height: 38rem;
+    width: 60%;
+    height: 43rem;
     align-items: center;
     text-align: center;
     gap: 0.5rem;
@@ -162,11 +749,19 @@ img {
 .coluna3 {
     display: flex;
     flex-direction: column;
-    width: 17%;
-    height: 29rem;
+    width: 60%;
+    height: 34rem;
     align-items: center;
     text-align: center;
     gap: 0.5rem;
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .bigColuna {
@@ -177,7 +772,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1000px;
+    width: 100%;
     height: 3100px;
     align-items: center;
     justify-content: center;
@@ -205,8 +800,6 @@ img {
     padding: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
 }
-
-
 
 .ano {
     display: flex;
@@ -277,7 +870,7 @@ img {
 .ttl {
     background-color: black;
     width: 100%;
-    height: 30%;
+    height: 50%;
     border-radius: 2rem;
     text-align: center;
 
@@ -306,20 +899,21 @@ button {
 }
 
 .classificacao {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
 .classificacao.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
 .classificacao:hover {
-  transform: scale(1.05);
-  z-index: 10;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05);
+    z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
