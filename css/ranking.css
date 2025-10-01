@@ -76,13 +76,13 @@ img {
     font-family: "Cherry Bomb One", system-ui;
     align-items: center;
     text-align: center;
-       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .colunas>.coluna1,
 .colunas>.coluna2,
 .colunas>.coluna3 {
-    
+
     transform: translateY(200px);
     opacity: 0;
     transition: transform 700ms cubic-bezier(.2, .8, .2, 1), opacity 700ms ease;
@@ -104,7 +104,7 @@ img {
     align-items: center;
     display: flex;
     flex-direction: column;
-       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 
     .colunas>div.show {
         transform: translateY(0);
@@ -203,7 +203,7 @@ img {
     border-radius: 15px;
     justify-content: space-between;
     padding: 10px;
-       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -261,7 +261,7 @@ img {
     background-color: rgba(255, 200, 113, 1);
     align-items: center;
     border-radius: 3rem;
-       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 
     h1 {
         font-family: "Cherry Bomb One", system-ui;
@@ -302,6 +302,60 @@ button {
         position: relative;
         z-index: 11;
         height: 4rem;
-        transform: rotate(180deg);
     }
+}
+
+.classificacao {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.classificacao.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.classificacao:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#rankingTitulo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+    cursor: default;
+    animation: pulseColor 3s infinite;
+}
+
+#rankingTitulo img {
+    width: 90px;
+    height: 90px;
+    animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+button {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.2) rotate(180deg);
 }

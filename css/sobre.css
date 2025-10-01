@@ -280,3 +280,42 @@ img {
         }
     }
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#rankingTitulo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  cursor: default;
+  animation: pulse 3s infinite;
+}
+
+#rankingTitulo img {
+  width: 90px;
+  height: 90px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.icons .icon {
+  transition: transform 0.3s ease;
+}
+
+.icons .icon:hover {
+  transform: scale(1.1);
+}
