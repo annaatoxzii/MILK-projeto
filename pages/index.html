@@ -1,110 +1,262 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.I.L.K.</title>
-    <link rel="icon" href="/imagens/vaca 1.png " type="image/png">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M.I.L.K.</title>
+        <link rel="icon" href="/imagens/vaca 1.png " type="image/png">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+            rel="stylesheet">
+    </head>
 
-<body>
+    <body>
 
+        <!------------------------------ COMEÇO HEADER ------------------------------>
 
-    <!------------------------------ COMEÇO HEADER ------------------------------>
+        <header class="base-header">
+            <div class="conteudo-header">
+                <div class="conteudo-logo">
+                    <img src="/src/assets/logo.png" alt="Logo">
+                </div>
 
+                <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Abrir menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
 
-    <header class="base-header">
-        <div class="conteudo-header">
-            <div class="conteudo-logo">
-                <img src="/src/assets/logo.png" alt="Logo">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/index.html" class="active">Início</a></li>
+                        <li><a href="/pages/salas.html"
+                                class="naoactive">Salas</a></li>
+                        <li><a href="/pages/ranking.html"
+                                class="naoactive">Ranking</a></li>
+                        <li><a href="/pages/equipe.html"
+                                class="naoactive">Equipe</a></li>
+                        <li><a href="/pages/sobre.html"
+                                class="naoactive">Sobre</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
+        <!------------------------------ FIM HEADER ------------------------------>
 
-            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+        <!------------------------------ COMEÇO MAIN ------------------------------>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/index.html" class="active">Início</a></li>
-                    <li><a href="/pages/salas.html" class="naoactive">Salas</a></li>
-                    <li><a href="/pages/ranking.html" class="naoactive">Ranking</a></li>
-                    <li><a href="/pages/equipe.html" class="naoactive">Equipe</a></li>
-                    <li><a href="/pages/sobre.html" class="naoactive">Sobre</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-    <!------------------------------ FIM HEADER ------------------------------>
-
-
-
-
-    <!------------------------------ COMEÇO MAIN ------------------------------>
-    <main>
-
-    </main>
-
-
-    <!------------------------------ FIM MAIN ------------------------------>
-
-
-    <script src="/javascript/header.js"></script>
-
-    <!------------------------------ INICIO FOOTER ------------------------------>
-
-    <footer>
-
-        <div class="geral">
-            <div class="infos">
-
-                <div class="colabs">
-                    <h3>Uma colaboração:</h3>
-                    <div class="imgfooter">
-                        <img class="vaca" src="/imagens/mono 1.png" alt="">
-                        <img src="/imagens/sesibranco.png" alt="">
-                        <img src="/imagens/senaibranco.png" alt="">
+        <main>
+            <section class="hero-section">
+                <div class="hero-image">
+                    <img src="/imagens/vaquinhamainindex.png"
+                        alt="Ilustração de uma vaquinha fofa preta e branca">
+                </div>
+                <div class="hero-text">
+                    <div class="hero-headline">
+                        <p class="headline-prefix">DOAR É UM ATO DE</p>
+                        <h1>AMOR</h1>
                     </div>
+                    <p class="hero-tagline">FAZENDO AS PESSOAS AMAREM A
+                        GENTILEZA</p>
+                    <a href="/pages/sobre.html" class="hero-button">Saiba mais
+                        sobre o projeto</a>
                 </div>
-                <div class="redes">
-                    <a href="https://www.instagram.com/sesisp?utm_source=ig_web_button_share_sheet&igsh=MWIyNndodWRqZTFqcA=="><img src="/imagens/instagram (1) 1.png" alt=""></a>
-                    <a href="https://www.facebook.com/share/18jBaEoRLJ/"><img src="/imagens/facebook (2) 1.png" alt=""></a>
-                    <a href="https://x.com/SesiSaoPaulo?t=oloz2CT8xgSEkSCf2C-Elg&s=09"><img src="/imagens/twitter 1.png" alt=""></a>
-                    <a href="www.youtube.com/c/SesiSãoPauloOficial"><img src="/imagens/youtube 1.png" alt=""></a>
-                </div>
-                <div class="membros">
-                    <h3>Desenvolvido por:</h3>
-                    <h3>Ana Tozzi</h3>
-                    <h3>Guilherme Albuquerque</h3>
-                    <h3>João Augusto</h3>
-                    <h3>Pedro Olian</h3>
-                </div>
+            </section>
+        </main>
 
+        <!------------------------------ FIM MAIN ------------------------------>
+
+        <script src="/javascript/header.js"></script>
+
+        <!------------------------------ INICIO ranking ------------------------------>
+        <div class="geralBody">
+
+            <div class="ranking">
+
+                <div class="buraco"></div>
+
+                <div class="bigColuna">
+                    <div class="sobrearrecadacao">
+                        <div class="textsobrearreacadacao">
+                            <h2>SOBRE A ARRECADAÇÃO</h2>
+                            <p>Nós, da Escola SESI Jaboticabal, contamos com sua
+                                solidariedade para ajudar quem mais precisa.
+                                Estamos arrecadando caixas de leite para doar às
+                                instituições sociais de nossa cidade, mostrando
+                                que, juntos, podemos transformar a
+                                sociedade.</p>
+                            <a href="/pages/pontos.html">
+                                <div class="botaoo">
+                                    Pontos de coleta
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="importanciaarrecadacao-section">
+
+                        <div class="importanciaarrecadacao-img">
+                            <img src="/imagens/vaquinhamilkmainindex.png"
+                                alt="Vaquinha com leite">
+                        </div>
+
+
+                        <div class="importanciaarrecadacao-conteudo">
+                            <h2
+                                class="importanciaarrecadacao-titulo">IMPORTÂNCIA
+                                DA ARRECADAÇÃO</h2>
+
+
+                            <div class="importanciaarrecadacao-cards">
+                                <div class="importanciacard">
+                                    <img class="importanciaicon"
+                                        src="/imagens/importanciaicon.png" alt>
+                                    <p>Doar leite é um gesto prático e direto de
+                                        amor ao próximo.</p>
+                                </div>
+                                <div class="importanciacard">
+                                    <img class="importanciaicon"
+                                        src="/imagens/importanciaicon.png" alt>
+                                    <p>A doação de leite garante nutrição
+                                        essencial para crianças em orfanatos e
+                                        idosos em abrigos.</p>
+                                </div>
+                                <div class="importanciacard">
+                                    <img class="importanciaicon"
+                                        src="/imagens/importanciaicon.png" alt>
+                                    <p>Cada litro doado alivia o orçamento das
+                                        instituições sociais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="carousel-container">
+                        <h2>FIQUE POR DENTRO DAS PRINCIPAIS INSTITUIÇÕES
+                            BENEFICIADAS</h2>
+                        <div class="carousel">
+                            <h3 class="carousel-title">LAR DE IDOSOS SÃO VICENTE
+                                DE
+                                PAULO</h3>
+
+                            <button class="carousel-btn prev-btn"
+                                aria-label="Imagem anterior"><img
+                                    src="/imagens/Group 16.png"
+                                    alt></button>
+                            <div class="carousel-image-wrapper">
+                                <img src="https://i.imgur.com/RZHLPZO.jpg"
+                                    alt="Lar de Idosos São Vicente de Paulo"
+                                    class="carousel-image" />
+                            </div>
+                            <button class="carousel-btn next-btn"
+                                aria-label="Próxima imagem"><img
+                                    src="/imagens/Group 17.png"
+                                    alt></button>
+                        </div>
+
+                        <script src="/javascript/carrossel.js"></script>
+                    </section>
+
+                    <div class="cartaz">
+                        <h2>ENTRE EM CONTATO CONOSCO</h2>
+                        <div class="icons">
+                            <div class="contact">
+                                <div class="icon"><img src="/imagens/tel.png"
+                                        alt></div>
+                                <h3>(16) 3204-3060</h3>
+                            </div>
+                            <div class="contact1">
+                                <div class="icon"><img src="/imagens/mail.png"
+                                        alt></div>
+                                <h3>ce317@sesisp.org.br</h3>
+                            </div>
+                            <div class="contact2">
+                                <div class="icon"><img src="/imagens/casa.png"
+                                        alt></div>
+                                <div class="tx">
+                                    <h3>Rua Sebastião Morgato, 151,</h3>
+                                    <h3> Colina Verde, Jaboticabal</h3>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
+            <script src="/javascript/ranking.js"></script>
 
+            <!------------------------------ FIM ranking ------------------------------>
 
-            <nav class="baixo">
-                <a href="index.html"><div class="bx">Início</div></a>
-                <a href="salas.html"><div class="bx">Salas</div></a>
-                <a href="ranking.html"><div class="bx">Ranking</div></a>
-                <a href="equipe.html"><div class="bx">Equipe</div></a>
-                <a href="sobre.html"><div class="bx">Sobre</div></a>
-            </nav>
-        </div>
+            <!------------------------------ INICIO FOOTER ------------------------------>
 
-    </footer>
-    <!------------------------------ FIM FOOTER ------------------------------>
-</body>
+            <footer>
 
-</html>
+                <div class="geral">
+                    <div class="infos">
+
+                        <div class="colabs">
+                            <h3>Uma colaboração:</h3>
+                            <div class="imgfooter">
+                                <img class="vaca" src="/imagens/mono 1.png" alt>
+                                <img src="/imagens/sesibranco.png" alt>
+                                <img src="/imagens/senaibranco.png" alt>
+                            </div>
+                        </div>
+                        <div class="redes">
+                            <a
+                                href="https://www.instagram.com/sesisp?utm_source=ig_web_button_share_sheet&igsh=MWIyNndodWRqZTFqcA=="><img
+                                    src="/imagens/instagram (1) 1.png" alt></a>
+                            <a
+                                href="https://www.facebook.com/share/18jBaEoRLJ/"><img
+                                    src="/imagens/facebook (2) 1.png"
+                                    alt></a>
+                            <a
+                                href="https://x.com/SesiSaoPaulo?t=oloz2CT8xgSEkSCf2C-Elg&s=09"><img
+                                    src="/imagens/twitter 1.png" alt></a>
+                            <a href="www.youtube.com/c/SesiSãoPauloOficial"><img
+                                    src="/imagens/youtube 1.png" alt></a>
+                        </div>
+                        <div class="membros">
+                            <h3>Desenvolvido por:</h3>
+                            <h3>Ana Tozzi</h3>
+                            <h3>Guilherme Albuquerque</h3>
+                            <h3>João Augusto</h3>
+                            <h3>Pedro Olian</h3>
+                        </div>
+
+                    </div>
+
+                    <nav class="baixo">
+                        <a href="index.html">
+                            <div class="bx">Início</div>
+                        </a>
+                        <a href="salas.html">
+                            <div class="bx">Salas</div>
+                        </a>
+                        <a href="ranking.html">
+                            <div class="bx">Ranking</div>
+                        </a>
+                        <a href="equipe.html">
+                            <div class="bx">Equipe</div>
+                        </a>
+                        <a href="sobre.html">
+                            <div class="bx">Sobre</div>
+                        </a>
+                    </nav>
+                </div>
+
+            </footer>
+            <!------------------------------ FIM FOOTER ------------------------------>
+        </body>
+
+    </html>

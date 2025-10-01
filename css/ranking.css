@@ -952,4 +952,12 @@ button {
 
 button:hover {
     transform: scale(1.2) rotate(180deg);
+
+    @media (max-width: 1000px) {
+        transform: none
+    }
+}
+
+.menu-toggle {
+    margin: 0;
 }

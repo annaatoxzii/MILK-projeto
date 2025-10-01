@@ -170,10 +170,10 @@ body {
 
 .carousel-title {
     font-family: "Cherry Bomb One", system-ui;
-    margin-bottom: 20px;
     color: black;
     font-size: 2rem;
     letter-spacing: 1.5px;
+    margin-top: 20px;
 }
 
 .carousel {
@@ -223,9 +223,7 @@ body {
     right: -12px;
 }
 
-/* Cartaz contato */
 .cartaz {
-    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -578,7 +576,7 @@ body {
     }
 
     .textoo {
-        width: 100%;
+        width: 90%;
         padding: 1rem;
     }
 
@@ -599,7 +597,7 @@ body {
     }
 
     .carousel-container {
-        max-width: 100%;
+        max-width: 90%;
         padding: 1rem;
     }
 
@@ -643,7 +641,6 @@ body {
     }
 }
 
-/* Até 400px */
 @media (max-width: 400px) {
     .topo {
         font-size: 36px;
@@ -661,12 +658,12 @@ body {
     }
 
     .TEXTO {
-        width: 100%;
+        width: 0%;
         margin-top: -8rem;
     }
 
     .textoo {
-        width: 100%;
+        width: 0%;
         padding: 0.8rem;
     }
 

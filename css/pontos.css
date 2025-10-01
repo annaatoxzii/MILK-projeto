@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(/imagens/BANNER.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    height: 90vh;
+
+}
+.pontosdecoletaimagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.pontosdecoletaimagem img {
+    height: 40vh;
+    width: auto;
+
+    @media (max-width: 600px) {
+        height: 30vh;
+    }
+
+}
+
+.titulocoleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.titulocoleta img {
+    height: 20vh;
+    width: auto;
+
+    @media (max-width: 600px) {
+        height: 15vh;
+    }
+}

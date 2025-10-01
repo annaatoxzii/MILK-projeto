@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>M.I.L.K.</title>
+    <link rel="icon" href="/imagens/vaca 1.png " type="image/png">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/salas.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-
-        <!------------------------------ COMEÇO HEADER ------------------------------>
-
+    <!------------------------------ COMEÇO HEADER ------------------------------>
 
     <header class="base-header">
         <div class="conteudo-header">
             <div class="conteudo-logo">
                 <img src="/src/assets/logo.png" alt="Logo">
             </div>
-
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
                 <span class="bar"></span>
@@ -31,7 +32,7 @@
 
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/index.html" class="naoactive">Início</a></li>
+                    <li><a href="/pages/index.html" class="naoactive">Início</a></li>
                     <li><a href="/pages/salas.html" class="active">Salas</a></li>
                     <li><a href="/pages/ranking.html" class="naoactive">Ranking</a></li>
                     <li><a href="/pages/equipe.html" class="naoactive">Equipe</a></li>
@@ -41,21 +42,224 @@
         </div>
     </header>
 
+    <!------------------------------ FIM HEADER ------------------------------>
 
-        <!------------------------------ FIM HEADER ------------------------------>
+    <!------------------------------ COMEÇO MAIN ------------------------------>
 
-
-
-
-        <!------------------------------ COMEÇO MAIN ------------------------------>
     <main>
+
+        <section class="topo">
+            <h1 class="animar-ao-ver" id="rankingTitulo">S<img src="/imagens/vaca 1.png" alt>LAS</h1>
+        </section>
+
+        <div class="category-container">
+            <div class="category-title">Fundamental 1</div>
+            <button class="nav-button prev" onclick="navegar('fundamental1', 'prev')">&lt;</button>
+            <div class="rooms-container">
+                <div class="rooms-slider" id="fundamental1-slider">
+                    <div class="room-card ">
+                        <div class="room-grade">1° A</div>
+                        <div class="donation-amount">30L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">1° B</div>
+                        <div class="donation-amount">08L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">2° A</div>
+                        <div class="donation-amount">20L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">2° B</div>
+                        <div class="donation-amount">15L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">3° A</div>
+                        <div class="donation-amount">25L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">3° B</div>
+                        <div class="donation-amount">12L</div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="nav-button next" onclick="navegar('fundamental1', 'next')">&gt;</button>
+        </div>
+
+        <div class="category-container">
+            <button class="nav-button prev" onclick="navegar('fundamental2', 'prev')">&lt;</button>
+            <div class="category-title">Fundamental 2</div>
+            <div class="rooms-container">
+                <div class="rooms-slider" id="fundamental2-slider">
+                    <div class="room-card">
+                        <div class="room-grade">6° A</div>
+                        <div class="donation-amount">20L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">6° B</div>
+                        <div class="donation-amount">06L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">7° A</div>
+                        <div class="donation-amount">10L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">7° B</div>
+                        <div class="donation-amount">18L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">8° A</div>
+                        <div class="donation-amount">22L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">8° B</div>
+                        <div class="donation-amount">14L</div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="nav-button next" onclick="navegar('fundamental2', 'next')">&gt;</button>
+        </div>
+
+        <div class="category-container">
+            <div class="category-title">Ensino médio</div>
+            <button class="nav-button prev" onclick="navegar('medio', 'prev')">&lt;</button>
+            <div class="rooms-container">
+                <div class="rooms-slider" id="medio-slider">
+                    <div class="room-card">
+                        <div class="room-grade">1° A</div>
+                        <div class="donation-amount">40L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">1° B</div>
+                        <div class="donation-amount">20L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">2° A</div>
+                        <div class="donation-amount">16L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">2° B</div>
+                        <div class="donation-amount">35L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">3° A</div>
+                        <div class="donation-amount">28L</div>
+
+                    </div>
+                    <div class="room-card">
+                        <div class="room-grade">3° B</div>
+                        <div class="donation-amount">32L</div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="nav-button next" onclick="navegar('medio', 'next')">&gt;</button>
+        </div>
 
     </main>
 
 
-        <!------------------------------ FIM MAIN ------------------------------>
 
+    <script>
+
+        function navegar(categoria, direcao) {
+            const trilho = document.getElementById(`${categoria}-slider`);
+            const larguraCartao = trilho.querySelector('.room-card').offsetWidth + 20;
+            const container = trilho.parentElement;
+
+
+            let deslocamento = container.scrollLeft;
+
+            if (direcao === "next") {
+                deslocamento += larguraCartao;
+            } else if (direcao === "prev") {
+                deslocamento -= larguraCartao;
+            }
+
+
+            container.scrollTo({
+                left: deslocamento,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <!------------------------------ FIM MAIN ------------------------------>
+
+
+    <!------------------------------ INICIO FOOTER ------------------------------>
+
+    <footer>
+
+        <div class="geral">
+            <div class="infos">
+
+                <div class="colabs">
+                    <h3>Uma colaboração:</h3>
+                    <div class="imgfooter">
+                        <img class="vaca" src="/imagens/mono 1.png" alt>
+                        <img src="/imagens/sesibranco.png" alt>
+                        <img src="/imagens/senaibranco.png" alt>
+                    </div>
+                </div>
+                <div class="redes">
+                    <a
+                        href="https://www.instagram.com/sesisp?utm_source=ig_web_button_share_sheet&igsh=MWIyNndodWRqZTFqcA=="><img
+                            src="/imagens/instagram (1) 1.png" alt></a>
+                    <a href="https://www.facebook.com/share/18jBaEoRLJ/"><img src="/imagens/facebook (2) 1.png" alt></a>
+                    <a href="https://x.com/SesiSaoPaulo?t=oloz2CT8xgSEkSCf2C-Elg&s=09"><img src="/imagens/twitter 1.png"
+                            alt></a>
+                    <a href="www.youtube.com/c/SesiSãoPauloOficial"><img src="/imagens/youtube 1.png" alt></a>
+                </div>
+                <div class="membros">
+                    <h3>Desenvolvido por:</h3>
+                    <h3>Ana Tozzi</h3>
+                    <h3>Guilherme Albuquerque</h3>
+                    <h3>João Augusto</h3>
+                    <h3>Pedro Olian</h3>
+                </div>
+
+            </div>
+
+            <nav class="baixo">
+                <a href="index.html">
+                    <div class="bx">Início</div>
+                </a>
+                <a href="salas.html">
+                    <div class="bx">Salas</div>
+                </a>
+                <a href="ranking.html">
+                    <div class="bx">Ranking</div>
+                </a>
+                <a href="equipe.html">
+                    <div class="bx">Equipe</div>
+                </a>
+                <a href="sobre.html">
+                    <div class="bx">Sobre</div>
+                </a>
+            </nav>
+        </div>
+
+    </footer>
+    <!------------------------------ FIM FOOTER ------------------------------>
 
     <script src="/javascript/header.js"></script>
 </body>
+
 </html>

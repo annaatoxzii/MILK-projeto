@@ -110,7 +110,7 @@ body {
 
     @media (max-width: 900px) {
         .bigColuna {
-            height: 2900px;
+            height: 3200px;
         }
 
         .cartaz {
@@ -124,7 +124,7 @@ body {
         .membros3 {
             display: flex;
             flex-direction: column;
-            gap: 3rem;
+            gap: 6rem;
         }
 
         .cartaz p {
@@ -135,6 +135,7 @@ body {
         .mm {
             width: 70%;
             padding: 1.5rem 1rem;
+            height: 1300px;
         }
 
         .sm {
@@ -157,6 +158,16 @@ body {
         .membro4 img,
         .membro5 img {
             border-radius: 22px;
+        }
+
+        .membro1 .hover-content,
+        .membro3 .hover-content,
+        .membro4 .hover-content,
+        .membro5 .hover-content {
+            border: 0.7rem solid rgba(255, 200, 113, 1);
+            border-top: none;
+            width: 91%;
+            padding-bottom: 3rem;
         }
 
         .nome {

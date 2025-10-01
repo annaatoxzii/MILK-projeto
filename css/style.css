@@ -1,10 +1,595 @@
-main{
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(/imagens/BANNER.png);
     width: 100%;
-    height: 100vh;
-    background-image: url('/src/images/background.png');
+    height: 800px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 0px 40px;
+    min-height: calc(60vh - 90px);
+    box-sizing: border-box;
+    background-color: transparent;
     background-size: cover;
     background-position: center;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+        gap: 40px;
+    }
+
+    @media (max-width: 600px) {
+        padding-bottom: 30px;
+    }
+}
+
+
+.hero-image img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.hero-text {
+    max-width: 600px;
+
+    @media (max-width: 1000px) {
+
+    }
+}
+
+.hero-headline {
+    margin-bottom: 20px;
+}
+
+.headline-prefix {
+    font-family: "Paytone One", sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+
+    @media (max-width: 1000px) {
+        font-size: 2rem;
+    }
+}
+
+.hero-headline h1 {
+    font-family: "Paytone One", sans-serif;
+    font-size: 10rem;
+    color: #212121;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 1000px) {
+        font-size: 7rem;
+    }
+}
+
+.hero-tagline {
+    font-family: "Paytone One", sans-serif;
+    font-size: 1.5rem;
+    color: #212121;
+    margin: 0 0 30px 0;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #FDCB6E;
+    color: #212121;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+.geralBody {
+    margin-top: -10vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo {
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 60px;
+    text-align: center;
+    padding: 4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+img {
+    height: 90px;
+}
+
+.buraco {
+    background: url(/imagens/Ellipse\ 1\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    margin-bottom: -8.89rem;
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.botaoo {
+        color: rgba(255, 200, 113, 1);
+        background-color: rgba(33, 33, 33, 1);
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 35px;
+        width: 18.5rem;
+        height: 55px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+            margin: 20px auto 0 auto;
+
+        &:hover {
+            color: rgba(33, 33, 33, 1);
+            background-color: rgba(251, 229, 181, 1);
+        }
+    }
+
+.bigColuna {
+    background: url(/imagens/Rectangle\ 21.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    height: 2400px;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: relative;
+
+    @media (max-width: 1300px) {
+        height: 2600px;
+        width: 100%;
+    }
+
+
+    @media (max-width: 550px) {
+        height: 2700px;
+        width: 100%;
+    }
+
+
+    
+
+}
+
+.sobrearrecadacao {
+    background: url(/src/assets/abcdefg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: -300px;
+
+    @media (max-width: 1000px) {
+        margin-top: -200px;
+        padding: 20px;
+        
+    }
+}
+
+.textsobrearreacadacao {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #FFC871;
+    width: 800px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 900px) {
+        width: 70%;
+    }
+
+    h2 {
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 3rem;
+        color: #212121;
+
+        @media (max-width: 900px) {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    p {
+        font-family: "Paytone one";
+        font-size: 26px;
+        color: #212121;
+
+        @media (max-width: 900px) {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.importanciaarrecadacao-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: #f8e6b5;
+  border-radius: 12px;
+  padding: 10vh 40px;
+  
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+}
+
+.importanciaarrecadacao-img img {
+  height: 30%;
+  width: 200px;
+  
+  @media (max-width: 1300px) {
+    width: 150px;
+    height: auto;
+    margin-left: 10vh;
+  }
+
+}
+
+.importanciaarrecadacao-conteudo {
+  flex: 1;
+
+
+}
+
+.importanciaarrecadacao-titulo {
+  background: #222;
+  color: #fff;
+  font-size: 40px;
+  padding: 5px 40px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 25px;
+  font-family: Cherry Bomb One, system-ui;
+
+  @media (max-width: 1300px) {
+    font-size: 30px;
+    padding: 5px 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.importanciaarrecadacao-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.importanciacard {
+ font-family: Paytone One, sans-serif;
+ font-size: 18px;
+  background: #ffcc66;
+  padding: 20px;
+  border-radius: 12px;
+  width: 240px;
+  text-align: center;
+  color: #222;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+
+
+  @media (max-width: 1300px) {
+    padding: 20px;
+    width: 220px;
+  }
+
+    @media (max-width: 1000px) {
+    display: flex;
+    padding: 30px;
+    width: 500px;
+  }
+
+  @media (max-width: 600px) {
+    width: 300px;
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+.importanciaicon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-right: 70%;
+
+  @media (max-width: 1000px) {
+    margin: 0 20px 15px auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 60%;
+    background: #fff;
+    border-radius: 36px;
+    padding: 3rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+
+    h2 {
+        font-family: "Paytone one";
+        font-size: 1.8rem;
+        width: 60%;
+        margin-bottom: 20px;
+        color: black;
+
+        @media (max-width: 900px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .carousel-title {
+        font-family: "Cherry Bomb One", system-ui;
+        margin-bottom: 20px;
+        color: black;
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+
+        @media (max-width: 900px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+    }
 }
+
+.carousel {
+    position: relative;
+    background-color: rgba(255, 200, 113, 1);
+    border-radius: 30px;
+    padding: 16px;
+}
+
+.carousel-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+
+    img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.3s ease;
+
+        @media (max-width: 600px) {
+            width: 35px;
+            height: 35px;
+        }
+
+        &:hover {
+            filter: invert(100%);
+        }
+    }
+}
+
+.prev-btn {
+    left: -12px;
+}
+
+.next-btn {
+    right: -12px;
+}
+
+
+.cartaz {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: -12rem;
+
+    h2 {
+        font-family: "Paytone one";
+        font-size: 30px;
+        letter-spacing: 1.5px;
+    }
+
+    .lar {
+        justify-content: center;
+        display: flex;
+        height: auto;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 5px;
+
+        @media (max-width: 1000px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .contact,
+    .contact1,
+    .contact2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 100px;
+
+        h3 {
+            font-family: "Paytone one";
+            font-size: 19px;
+            margin-left: 8px;
+            margin-right: 8px;
+
+            @media (max-width: 1000px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .contact {
+        width: 220px;
+
+        @media (max-width: 1000px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .contact1 {
+        width: 270px;
+
+        @media (max-width: 1000px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .contact2 {
+        width: 350px;
+
+        @media (max-width: 1000px) {
+            margin-bottom: 10px;
+            width: 300px;
+        }
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        background-color: rgba(251, 229, 181, 1);
+        border-radius: 30px;
+
+        @media (max-width: 1000px) {
+            height: 40px;
+            width: 40px;
+        }
+
+        img {
+            height: 28px;
+            width: 30px;
+
+            @media (max-width: 1000px) {
+                height: 20px;
+                width: 22px;
+            }
+        }
+    }
+}
+
